@@ -1,0 +1,116 @@
+.section
+    &--column
+        padding 120px 0 0
+
+        h3
+            margin 0 auto 80px
+            padding 0 60px
+            max-width 1248px
+            width 100%
+
+            @media(max-width 1400px)
+                margin-bottom 5.714vw
+                padding 0 4.286vw;
+
+        .section__wrap
+            line-height 47px
+            font-size 36px
+            color #fff
+            position relative
+            background-color #3A3E46
+
+            @media(max-width 1400px)
+                line-height 3.357vw
+                font-size 2.571vw
+
+            @media(max-width 1023px)
+                line-height 3.8vw
+                font-size 2.8vw
+
+            @media(max-width 650px)
+                line-height 4.8vw
+                font-size 3.5vw
+
+            @media(max-width 550px)
+                line-height 6vw
+                font-size 4vw
+
+            img
+                margin-left auto
+                width 36.857%
+
+                @media(max-width 650px)
+                    width 100%
+
+            .box-center
+                height 100%
+                display flex
+                align-items center
+                position absolute
+                top 0
+                left 50%
+                transform translateX(-50%)
+
+                @media(max-width 650px)
+                    padding 4.286vw
+                    position static
+                    transform translateX(0)
+
+            .column-list
+                width 64%
+
+                @media(max-width 1023px)
+                    margin-left 2.4vw
+                    width 59%
+
+                @media(max-width 650px)
+                    margin-left 3vw
+                    width calc(100% - 3vw)
+
+                @media(max-width 550px)
+                    margin-left 5vw
+                    width calc(100% - 5vw)
+
+                &__item
+                    position relative
+                    opacity 0
+                    transform translateY(25%)
+                    transition opacity 300ms 300ms ease, transform 300ms 300ms ease
+
+                    &:not(:last-child)
+                        margin-bottom 9%
+
+                        @media(max-width 1023px)
+                            margin-bottom 6%
+
+                    &:nth-child(2)
+                        transition-delay 600ms
+
+                    &:nth-child(3)
+                        transition-delay 900ms
+
+                    &:last-child
+                        transition-delay 1200ms
+
+                    span
+                        line-height 1.286vw
+                        font-size 1vw
+                        color #FED053
+                        position absolute
+                        top 0
+                        left -2.286vw
+
+                        @media(max-width 1023px)
+                            line-height 1.6vw
+                            font-size 1.3vw
+                            left -2.4vw
+
+                        @media(max-width 650px)
+                            line-height 2vw
+                            font-size 1.8vw
+                            left -3vw
+
+                        @media(max-width 550px)
+                            line-height 3vw
+                            font-size 2.5vw
+                            left -4vw

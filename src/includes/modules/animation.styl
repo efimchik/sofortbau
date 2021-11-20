@@ -1,0 +1,114 @@
+.header
+    &.js-init-animation
+        .logo
+        .header__text
+            transform translateX(0)
+
+
+.section--list
+    &.js-init-animation
+        .list__item
+            opacity 1
+            transform translateY(0)
+
+
+
+.section--advantage
+    &.js-init-animation
+        .advantage__list
+            &-item
+                &:before
+                &:after
+                    opacity 1
+
+            &-icn
+                opacity 1
+
+                img
+                    opacity 1
+
+
+
+.section--price
+    &.js-init-animation
+        .price
+            transform translateY(0)
+
+        .app-banner
+            bottom 0
+
+
+.grid-list
+    &.js-init-animation
+        .grid-list__item
+            opacity 1
+            transform translateY(0)
+
+            &:first-child
+            &:last-child
+                transform translateY(0)
+
+
+.section--column
+    &.js-init-animation
+        .section__wrap
+            .column-list__item
+                opacity 1
+                transform translateY(0)
+
+
+.section--mailing
+    &.js-init-animation
+        h2
+            opacity 1
+            transform translateY(0)
+
+        .section
+            &__desc
+                opacity 1
+                transform translateY(0)
+        .btn
+            opacity 1
+
+        .form
+            &__line
+                width 94%
+
+                @media(max-width 450px)
+                    width 100%
+
+            &__field
+                opacity 1
+
+
+
+.footer
+    &.js-init-animation
+        .btn
+            opacity 1
+
+        .box-center
+            .footer__text
+                &-title
+                    opacity 1
+
+                &-desc
+                    opacity 1
+
+            .footer__form
+                form
+                    input
+                        width 100%
+
+                    .form__line
+                        input
+                            width calc((100% - 24px) / 2)
+
+                            @media(max-width 1400px)
+                                width calc((100% - 1.714vw) / 2)
+
+                            @media(max-width 570px)
+                                width 100%
+
+                    .btn
+                        opacity 1

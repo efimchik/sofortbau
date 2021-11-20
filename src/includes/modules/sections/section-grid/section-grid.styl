@@ -1,0 +1,113 @@
+.section
+    &--grid
+        padding 120px 0
+
+        @media(max-width 1400px)
+            padding 8.571vw 0
+
+        h3
+            margin-bottom 120px
+
+            @media(max-width 1400px)
+                margin-bottom 8.571vw
+
+            strong
+                display block
+
+                @media(max-width 768px)
+                    display inline
+
+                span
+                    &:first-child
+                        color #F4B301
+
+                    &:nth-child(2)
+                        color #F4A202
+
+        .grid-list
+            // margin-bottom 238px
+            width 100%
+            display grid
+            grid-template-columns repeat(3, 1fr)
+            grid-gap 0 24px
+
+            @media(max-width 1400px)
+                // margin-bottom 16.429vw
+                grid-gap 0 1.714vw
+
+            // @media(max-width 1023px)
+            //     margin-bottom 10vw
+
+            @media(max-width 767px)
+                grid-template-columns repeat(1, 1fr)
+                grid-gap 1.714vw 0
+
+            @media(max-width 410px)
+                grid-gap 20px 0
+
+            &__item
+                display flex
+                flex-direction column
+                align-items center
+                justify-content space-between
+                background-color #FBCE52
+                opacity 0
+                transform translateY(-30px)
+                transition all 500ms ease
+
+                @media(max-width 767px)
+                    flex-direction row
+
+                @media(max-width 410px)
+                    flex-direction column
+
+                &:first-child
+                &:last-child
+                    transform translateY(30px)
+
+            &__title
+                padding-top calc(100% - 50px)
+                position relative
+
+                @media(max-width 767px)
+                    padding-top 0
+                    width 50%
+                    height 100%
+
+                @media(max-width 410px)
+                    padding-top calc(100% - 50px)
+                    width 100%
+                    order 1
+
+                span
+                    position absolute
+                    top 50%
+                    left 50%
+                    line-height 44px
+                    font-size 35px
+                    color #1D2228
+                    font-weight 600
+                    transform translate(-50%, -50%)
+
+                    @media(max-width 1400px)
+                        line-height 3.143vw
+                        font-size 2.5vw
+
+                    @media(max-width 1023px)
+                        line-height 3.5vw
+                        font-size 3vw
+
+                    @media(max-width 767px)
+                        line-height 4.5vw
+                        font-size 4vw
+
+                    @media(max-width 410px)
+                        line-height 8.5vw
+                        font-size 8vw
+
+            &__img
+                @media(max-width 767px)
+                    width 50%
+
+                @media(max-width 410px)
+                    width 100%

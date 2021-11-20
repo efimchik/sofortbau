@@ -1,0 +1,24 @@
+footer.footer.js-scroll
+    .footer__flex
+        .footer__flex-column
+            .footer__text
+            .footer__form
+        .footer__img
+            picture
+                source(srcset="./img/footer-img.webp" type="image/webp")
+                img(src="./img/footer-img.jpg", alt="")
+
+        .box-center
+            .footer__flex-column
+                .footer__text
+                    .footer__text-column
+                        .footer__text-title Willst du
+                            span Fahrer werden?
+                        .footer__text-desc Bitte kontaktieren Sie uns für eine offene Stelle
+                .footer__form
+                    form(action="")
+                        input(type="text", placeholder="E-Mail-Adresse *")
+                        .form__line
+                            input(type="text", placeholder="vollständiger Name*")
+                            input(type="text", placeholder="Telefon")
+                        button(class="btn", type="submit") Absenden

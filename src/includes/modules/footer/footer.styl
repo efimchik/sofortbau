@@ -1,0 +1,203 @@
+.footer
+    position relative
+
+    &__flex
+        display flex
+
+        @media(max-width 767px)
+            flex-direction column
+
+        &-column
+            width 54.571%
+            display flex
+            flex-direction column
+
+            @media(max-width 767px)
+                display none
+
+    &__img
+        width 45.429%
+
+        @media(max-width 767px)
+            width 100%
+
+    &__text
+    &__form
+        height 50%
+
+    &__form
+        background-color #F4A202
+
+    .box-center
+        height 100%
+        position absolute
+        top 0
+        left 50%
+        transform translateX(-50%)
+
+        @media(max-width 767px)
+            padding 4.286vw 0 0
+            height auto
+            position static
+            transform translateX(0)
+
+        @media(max-width 410px)
+            padding 6vw 0 0
+
+        .footer
+            &__flex-column
+                width 55%
+                height 100%
+
+                @media(max-width 767px)
+                    width 100%
+                    height auto
+                    display block
+
+            &__form
+                padding-right 90px
+                width 100%
+                display flex
+                align-items center
+                box-sizing border-box
+
+                @media(max-width 1400px)
+                    padding-right 6.429vw
+
+                @media(max-width 767px)
+                    padding 4.286vw
+
+                @media(max-width 410px)
+                    padding 6vw 4.286vw 8vw
+
+                form
+                    width 100%
+
+                    input
+                        padding 13px 0
+                        width 0
+                        font-family 'Open Sans', sans-serif
+                        line-height 22px
+                        font-size 16px
+                        color #fff
+                        letter-spacing .1em
+                        border 0
+                        border-bottom 2px solid #fff
+                        background none
+                        transition width 500ms 1000ms ease
+
+                        @media(max-width 1400px)
+                            // padding 0.929vw 0
+                            line-height 1.571vw
+                            font-size 1.143vw
+
+                        @media(max-width 1023px)
+                            line-height 1.8vw
+                            font-size 1.6vw
+
+                        @media(max-width 767px)
+                            line-height 2.5vw
+                            font-size 2vw
+
+                        @media(max-width 570px)
+                            line-height 16px
+                            font-size 14px
+
+                    .form__line
+                        margin 40px 0
+                        width 100%
+                        display flex
+                        justify-content space-between
+
+                        @media(max-width 1400px)
+                            margin 2.857vw 0
+
+                        @media(max-width 767px)
+                            margin 3.6vw 0
+
+                        @media(max-width 570px)
+                            margin 3.6vw 0 0
+                            flex-direction column
+
+                        input
+                            width 0
+                            transition width 500ms 1500ms ease
+
+                            @media(max-width 570px)
+                                margin-bottom 3.6vw
+
+                    .btn
+                        margin-left auto
+                        opacity 0
+                        transition opacity 500ms 2000ms ease
+
+                        @media(max-width 1023px)
+                            width 106px
+                            height 40px
+                            line-height 38px
+                            font-size 14px
+
+                        @media(max-width 570px)
+                            width 100%
+
+            &__text
+                padding-right 90px
+                display flex
+                flex-direction column
+                justify-content center
+
+                @media(max-width 1400px)
+                    padding-right 6.429vw
+
+                @media(max-width 767px)
+                    padding 0 4.286vw 4.286vw
+
+                @media(max-width 570px)
+                    padding 0 4.286vw 6vw
+
+                &-title
+                    margin-bottom 8px
+                    line-height 58px
+                    font-size 50px
+                    font-weight 600
+                    opacity 0
+                    transition opacity 500ms ease
+
+                    @media(max-width 1400px)
+                        margin-bottom 0.571vw
+                        line-height 4.143vw
+                        font-size 3.571vw
+
+                    @media(max-width 767px)
+                        margin-bottom 2vw
+                        line-height 7.714vw
+                        font-size 6.143vw
+
+                    @media(max-width 570px)
+                        margin-bottom 4vw
+                        line-height 11.8vw
+                        font-size 10vw
+
+                    span
+                        display block
+
+                &-desc
+                    font-family 'Open Sans', sans-serif
+                    line-height 34px
+                    font-size 25px
+                    font-weight 300
+                    color #3A3E46
+                    opacity 0
+                    transition opacity 500ms 500ms ease
+
+                    @media(max-width 1400px)
+                        line-height 2.429vw
+                        font-size 1.786vw
+
+                    @media(max-width 767px)
+                        line-height 3.5vw
+                        font-size 3vw
+
+                    @media(max-width 570px)
+                        line-height 6vw
+                        font-size 4vw

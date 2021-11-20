@@ -1,0 +1,52 @@
+.section
+    &--list
+        padding 112px 0
+        background-color #FBCE52
+
+        @media(max-width 1400px)
+            padding 8vw 0
+
+        .box-center
+            max-width 1152px
+
+        .list
+            box-sizing border-box
+
+            @media(max-width 1400px)
+                padding-left 17px
+
+            &__item
+                position relative
+                opacity 0
+                transform translateY(25%)
+                transition opacity 300ms 300ms ease, transform 300ms 300ms ease
+
+                &:first-child
+                    transition opacity 300ms ease, transform 300ms 300ms ease
+
+                &:last-child
+                    transition opacity 300ms 600ms ease, transform 300ms 300ms ease
+
+                span
+                    display block
+                    position absolute
+                    top 12px
+                    left -24px
+                    line-height 18px
+                    font-size 14px
+                    color #1D2228
+
+                h2
+                    color #fff
+
+                    span
+                        display inline
+                        position static
+                        font-size 86px
+                        color #1D2228
+
+                        @media(max-width 1400px)
+                            font-size 6.1vw
+
+                        @media(max-width 570px)
+                            font-size 10vw
