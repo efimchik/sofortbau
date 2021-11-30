@@ -1,19 +1,20 @@
 {
     "global": {
-        "lang": "ru",
-        "title": "Sofortbau",
+        "lang": "de",
+        "title": "SofortBau",
         "styles": [
-            "./css/main.css"
+            "./css/main.min.css"
         ],
         "scripts": [
-            "./js/main.js"
+            "./js/main.min.js"
         ],
         "fonts": [
             "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Sora:wght@400;600;700&display=swap"
         ]
     },
     "main": {
-        "title": "Sofortbau",
-        "description": "Sofortbau landing page"
+        "title": "SofortBau-main",
+        "description": "Sofortbau landing page",
+        "menuIndex": 0
     }
 }

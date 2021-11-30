@@ -1,1 +1,1 @@
-@@include('./partials/init-animate.js')
+require('./partials/init-animate.js');

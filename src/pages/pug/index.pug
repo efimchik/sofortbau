@@ -1,0 +1,27 @@
+extends ./../../includes/templates/landing/landing
+block config
+    - let params = meta.main
+
+
+
+append fonts
+
+prepend styles
+
+append styles
+
+append headScripts
+
+
+block content
+    include ./../../includes/modules/header/header
+    include ./../../includes/modules/sections/section-list/section-list
+    include ./../../includes/modules/sections/section-advantage/section-advantage
+    include ./../../includes/modules/sections/section-price/section-price
+    include ./../../includes/modules/sections/section-grid/section-grid
+    include ./../../includes/modules/sections/section-column/section-column
+    include ./../../includes/modules/sections/section-mailing/section-mailing
+    include ./../../includes/modules/footer/footer
+
+
+append scripts
